@@ -1,0 +1,58 @@
+.nav{
+    position: relative;
+    background-color: #ffffff;
+    z-index: 1;
+
+    &-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 15.2px;
+        letter-spacing: 1.5px;
+        height: 80px;
+
+        .hamburger{
+            display: none;
+
+            @include tablet-md{
+                display: block;
+            }
+        }
+    
+        ul{
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+    
+            @include tablet-md{
+                display: none;
+            }
+    
+            li{
+                margin-left: 1.5rem;
+    
+                a{
+                    color: $grayish-blue ;
+    
+                    &:hover{
+                        color: $dark-violet;
+                    }
+                }
+            }
+    
+            li.btn a {
+                    color: $dark-violet;
+                    padding: 0.75rem 1.75rem;
+                    border: solid $dark-violet 1.5px;
+                    display: inline-block;
+    
+                    &:hover{
+                        color: white;
+                        background-color: $dark-violet;
+                    }                
+            }
+        }
+    }
+}

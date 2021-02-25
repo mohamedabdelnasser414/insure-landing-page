@@ -1,0 +1,32 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Karla', sans-serif;
+}
+
+.container{
+    width: 76%;
+    margin: 0 auto;
+
+    @include mobile{
+        width: 87%;
+    }
+}
+
+h1, h2, h3{
+    font-family: 'DM Serif Display', serif;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+

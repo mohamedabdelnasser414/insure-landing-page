@@ -1,0 +1,41 @@
+//Colors
+$dark-violet: hsl(256, 26%, 20%);
+$grayish-blue: hsl(216, 30%, 68%);
+$deep-violet: hsl(270, 9%, 17%);
+$grayish-violet: hsl(273, 4%, 51%);
+$light-gray: hsl(0, 0%, 98%);
+$white: hsl(0, 0%, 100%);
+
+
+@mixin line-top{
+    content: "";
+    width: 150px;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+// Media query mixins
+
+@mixin tablet-lg{
+    @media screen and (max-width:1200px){
+        @content;
+    }
+}
+@mixin tablet-md{
+    @media screen and (max-width:1000px){
+        @content;
+    }
+}
+@mixin tablet-sm {
+    @media screen and (max-width:750px){
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width:450px){
+        @content;
+    }
+}
