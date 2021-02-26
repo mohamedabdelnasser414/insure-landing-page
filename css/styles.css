@@ -106,6 +106,7 @@ a {
   background-color: #2d2640;
   padding-top: 6.5rem;
   position: relative;
+  display: none;
 }
 
 @media screen and (max-width: 450px) {
@@ -284,6 +285,7 @@ a {
   margin-top: 19rem;
   margin-bottom: 10.125rem;
   color: #2b272f;
+  display: none;
 }
 
 @media screen and (max-width: 750px) {
@@ -364,4 +366,148 @@ a {
   color: #837d87;
   line-height: 26px;
   font-size: 1rem;
+}
+
+.action {
+  background-color: #2d2640;
+  min-height: 15.625rem;
+  background-image: url(../images/bg-pattern-how-we-work-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  color: white;
+  padding: 0 5rem;
+  margin-bottom: 9.375rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .action {
+    background-image: url(../images/bg-pattern-how-we-work-mobile.svg);
+    flex-direction: column;
+    text-align: center;
+    padding: 4.5rem 1.5rem;
+  }
+}
+
+.action h2 {
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 3.5rem;
+  letter-spacing: -0.78px;
+  max-width: 475px;
+}
+
+@media screen and (max-width: 1200px) {
+  .action h2 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    letter-spacing: -0.56px;
+  }
+}
+
+.action a {
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  line-height: 15px;
+  letter-spacing: 1.5px;
+  padding: 12px 24.5px 11px;
+  border: solid white 1px;
+  min-width: 159px;
+  display: block;
+}
+
+@media screen and (max-width: 1000px) {
+  .action a {
+    margin-top: 2.5rem;
+  }
+}
+
+.action a:hover {
+  background-color: white;
+  color: #2d2640;
+}
+
+footer {
+  background-color: #fafafa;
+  background-image: url(../images/bg-pattern-footer-desktop.svg);
+  background-repeat: no-repeat;
+  padding: 4rem 0;
+}
+
+footer .footer-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 750px) {
+  footer .footer-top {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+footer .footer-top .social-icons a {
+  margin-left: 1rem;
+  display: inline-block;
+}
+
+@media screen and (max-width: 750px) {
+  footer .footer-top .social-icons a {
+    margin-top: 2rem;
+  }
+}
+
+footer .footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3rem;
+  margin-top: 2rem;
+  border-top: solid #95a9c6 1px;
+}
+
+@media screen and (max-width: 1000px) {
+  footer .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+footer .footer-bottom h3 {
+  font-family: 'Karla', sans-serif;
+  color: #837d87;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+}
+
+footer .footer-bottom a {
+  color: #2b272f;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 1.5px;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+footer .footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+footer .footer-bottom div {
+  width: 23.3%;
+}
+
+@media screen and (max-width: 1000px) {
+  footer .footer-bottom div {
+    width: 100%;
+    margin-bottom: 2.5rem;
+  }
 }
