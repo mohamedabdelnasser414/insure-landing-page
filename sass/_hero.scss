@@ -11,7 +11,6 @@
     background-color: $dark-violet;
     padding-top: 6.5rem;
     position: relative;
-    display: none;
     @include mobile{
         padding-top: 0;
         overflow: hidden;

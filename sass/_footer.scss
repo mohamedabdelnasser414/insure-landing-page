@@ -18,9 +18,15 @@ footer{
             margin-left: 1rem;
             display: inline-block;
             
+            svg path:hover{
+                fill: $deep-violet;
+            }
+
             @include tablet-sm{
              margin-top: 2rem;   
             }
+
+
         }
     }
 
@@ -61,6 +67,7 @@ footer{
             &:hover{
                 text-decoration: underline;
             }
+
         }
         
 
@@ -74,3 +81,7 @@ footer{
         }
     }
 }
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+

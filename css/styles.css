@@ -106,7 +106,6 @@ a {
   background-color: #2d2640;
   padding-top: 6.5rem;
   position: relative;
-  display: none;
 }
 
 @media screen and (max-width: 450px) {
@@ -285,7 +284,6 @@ a {
   margin-top: 19rem;
   margin-bottom: 10.125rem;
   color: #2b272f;
-  display: none;
 }
 
 @media screen and (max-width: 750px) {
@@ -454,6 +452,10 @@ footer .footer-top .social-icons a {
   display: inline-block;
 }
 
+footer .footer-top .social-icons a svg path:hover {
+  fill: #2b272f;
+}
+
 @media screen and (max-width: 750px) {
   footer .footer-top .social-icons a {
     margin-top: 2rem;
@@ -510,4 +512,13 @@ footer .footer-bottom div {
     width: 100%;
     margin-bottom: 2.5rem;
   }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
 }
