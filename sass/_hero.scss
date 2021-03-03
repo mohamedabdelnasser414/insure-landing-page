@@ -6,11 +6,11 @@
     position: absolute;
 }
 
-
-.hero{
+.hero {
     background-color: $dark-violet;
     padding-top: 6.5rem;
     position: relative;
+
     @include mobile{
         padding-top: 0;
         overflow: hidden;
@@ -92,7 +92,6 @@
                 font-size: 4.5rem;
                 line-height: 4rem;
                 letter-spacing: -1px;
-                font-weight: 400;
                 padding-top: 4rem;
                 margin-bottom: 1rem;
                 position: relative;
@@ -126,11 +125,11 @@
 
             a{
                 font-size: 0.75rem;
-                line-height: 1rem;
+                line-height: 15px;
                 letter-spacing: 1.5px;
                 color: white;
                 padding: 0.75rem 1.75rem;
-                border: solid white 1.5px;
+                border: solid white 1px;
                 display: inline-block;
                 margin-bottom: 2rem;
 
@@ -143,8 +142,8 @@
         }
 
 
-        img{
-            margin-bottom: -155px;
+        picture{
+            margin-bottom: -158px;
 
             @include tablet-md{
                 margin: 0 -1.5rem;

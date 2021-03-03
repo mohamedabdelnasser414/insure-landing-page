@@ -30,3 +30,47 @@ a{
     text-decoration: none;
 }
 
+
+// Classes for mobile view Navigation toggle 
+
+header nav .show-nav{        
+    @include tablet-md{
+        position: absolute;
+        top: 80px;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: $dark-violet;
+        width: 100vw;
+        height: calc(100vh - 80px);
+        padding-top: 2.5rem;
+        font-size: 1.25rem;
+        line-height: 2.5rem;
+
+        @include mobile{
+            background-image: url(../images/bg-pattern-mobile-nav.svg);
+            background-repeat: no-repeat;
+            background-position: bottom right;
+        }
+
+        li{ 
+            padding-top: 1.5rem;
+            margin-left: 0;
+
+            a {
+                color: white;
+        }
+
+        }
+        li.btn a{
+            color:$white;
+            padding: 0.4rem 5rem;
+            border: solid $white 1.5px;
+        }
+    }
+}
+
+.body-height{
+    height: 100vh;
+    overflow: hidden;
+}

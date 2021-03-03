@@ -31,10 +31,54 @@ a {
   text-decoration: none;
 }
 
+@media screen and (max-width: 1000px) {
+  header nav .show-nav {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #2d2640;
+    width: 100vw;
+    height: calc(100vh - 80px);
+    padding-top: 2.5rem;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 450px) {
+  header nav .show-nav {
+    background-image: url(../images/bg-pattern-mobile-nav.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  header nav .show-nav li {
+    padding-top: 1.5rem;
+    margin-left: 0;
+  }
+  header nav .show-nav li a {
+    color: white;
+  }
+  header nav .show-nav li.btn a {
+    color: white;
+    padding: 0.4rem 5rem;
+    border: solid white 1.5px;
+  }
+}
+
+.body-height {
+  height: 100vh;
+  overflow: hidden;
+}
+
 .nav {
   position: relative;
   background-color: #ffffff;
-  z-index: 1;
+  z-index: 2;
 }
 
 .nav-wrapper {
@@ -203,7 +247,6 @@ a {
   font-size: 4.5rem;
   line-height: 4rem;
   letter-spacing: -1px;
-  font-weight: 400;
   padding-top: 4rem;
   margin-bottom: 1rem;
   position: relative;
@@ -249,11 +292,11 @@ a {
 
 .hero-inner .hero-text a {
   font-size: 0.75rem;
-  line-height: 1rem;
+  line-height: 15px;
   letter-spacing: 1.5px;
   color: white;
   padding: 0.75rem 1.75rem;
-  border: solid white 1.5px;
+  border: solid white 1px;
   display: inline-block;
   margin-bottom: 2rem;
 }
@@ -263,26 +306,26 @@ a {
   background-color: white;
 }
 
-.hero-inner img {
-  margin-bottom: -155px;
+.hero-inner picture {
+  margin-bottom: -158px;
 }
 
 @media screen and (max-width: 1000px) {
-  .hero-inner img {
+  .hero-inner picture {
     margin: 0 -1.5rem;
   }
 }
 
 @media screen and (max-width: 450px) {
-  .hero-inner img {
+  .hero-inner picture {
     position: relative;
     z-index: 1;
   }
 }
 
 .features {
-  margin-top: 19rem;
-  margin-bottom: 10.125rem;
+  margin-top: 19.0625rem;
+  margin-bottom: 9.875rem;
   color: #2b272f;
 }
 
@@ -297,7 +340,7 @@ a {
   line-height: 4rem;
   letter-spacing: -1px;
   font-weight: 400;
-  padding-top: 4rem;
+  padding-top: 62px;
   margin-bottom: 6rem;
   position: relative;
 }
@@ -466,7 +509,7 @@ footer .footer-bottom {
   display: flex;
   justify-content: space-between;
   padding-top: 3rem;
-  margin-top: 2rem;
+  margin-top: 2.25rem;
   border-top: solid #95a9c6 1px;
 }
 
@@ -514,11 +557,12 @@ footer .footer-bottom div {
   }
 }
 
-.attribution {
+footer .attribution {
+  margin-top: 0.5rem;
   font-size: 11px;
   text-align: center;
 }
 
-.attribution a {
+footer .attribution a {
   color: #3e52a3;
 }

@@ -34,7 +34,7 @@ footer{
         display: flex;
         justify-content: space-between;
         padding-top: 3rem;
-        margin-top: 2rem;
+        margin-top: 2.25rem;
         border-top: solid $grayish-blue 1px;
 
         @include tablet-md{
@@ -80,8 +80,16 @@ footer{
             }
         }
     }
+    .attribution { 
+        margin-top: 0.5rem;
+        font-size: 11px; 
+        text-align: center; 
+
+        a { 
+            color: hsl(228, 45%, 44%); 
+        }
+    }   
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+
 
