@@ -40,22 +40,15 @@ a {
     flex-direction: column;
     background-color: #2d2640;
     width: 100vw;
-    height: calc(100vh - 80px);
+    height: 35rem;
     padding-top: 2.5rem;
     font-size: 1.25rem;
     line-height: 2.5rem;
-  }
-}
-
-@media screen and (max-width: 1000px) and (max-width: 450px) {
-  header nav .show-nav {
     background-image: url(../images/bg-pattern-mobile-nav.svg);
     background-repeat: no-repeat;
     background-position: bottom right;
+    background-size: 100%;
   }
-}
-
-@media screen and (max-width: 1000px) {
   header nav .show-nav li {
     padding-top: 1.5rem;
     margin-left: 0;
@@ -63,16 +56,18 @@ a {
   header nav .show-nav li a {
     color: white;
   }
+  header nav .show-nav li a:hover {
+    color: #95a9c6;
+  }
   header nav .show-nav li.btn a {
     color: white;
     padding: 0.4rem 5rem;
     border: solid white 1.5px;
   }
-}
-
-.body-height {
-  height: 100vh;
-  overflow: hidden;
+  header nav .show-nav li.btn a:hover {
+    color: #2d2640;
+    background-color: white;
+  }
 }
 
 .nav {

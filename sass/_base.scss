@@ -42,16 +42,15 @@ header nav .show-nav{
         flex-direction: column;
         background-color: $dark-violet;
         width: 100vw;
-        height: calc(100vh - 80px);
+        height: 35rem;
         padding-top: 2.5rem;
         font-size: 1.25rem;
         line-height: 2.5rem;
+        background-image: url(../images/bg-pattern-mobile-nav.svg);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: 100%;
 
-        @include mobile{
-            background-image: url(../images/bg-pattern-mobile-nav.svg);
-            background-repeat: no-repeat;
-            background-position: bottom right;
-        }
 
         li{ 
             padding-top: 1.5rem;
@@ -59,18 +58,23 @@ header nav .show-nav{
 
             a {
                 color: white;
+            
+                &:hover{
+                    color: $grayish-blue;
+                }
+            }
         }
 
-        }
         li.btn a{
             color:$white;
             padding: 0.4rem 5rem;
             border: solid $white 1.5px;
+            
+            &:hover{
+                color: $dark-violet;
+                background-color: white;
+            }
         }
     }
 }
 
-.body-height{
-    height: 100vh;
-    overflow: hidden;
-}
